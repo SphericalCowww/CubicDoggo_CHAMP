@@ -1,4 +1,4 @@
-# CubicDoggo CHAMP: Upgrade to Incorporate IMU
+# CubicDoggo CHAMP: Upgrade to Incorporate IMU/LiDAR
 
 Derived from <a href="https://github.com/SphericalCowww/CubicDoggo">GitHub</a>.
 
