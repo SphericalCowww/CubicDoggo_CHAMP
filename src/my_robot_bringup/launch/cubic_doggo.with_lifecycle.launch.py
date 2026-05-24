@@ -94,8 +94,17 @@ def generate_launch_description():
         remappings=[("joy", "/joy")] 
     )
 
+    imu_node = Node(
+        package="my_robot_peripheral",
+        executable="imu_bno055_node",
+        output="screen",
+        parameters=[{"i2c_bus":   "/sys/class/hwmon/hwmon3/in0_lcrit_alarm",
+                     "address":   0x28,
+                     "reset_pin": "17"}]
+    )
+
     peripheral_node = Node(
-        package="my_robot_commander",
+        package="my_robot_peripheral",
         executable="rasp_pi_peripheral_node",
         output="screen", 
         emulate_tty=True,
@@ -115,6 +124,7 @@ def generate_launch_description():
         #rviz_node,
         joy_driver_node,
         joy_controller_node,
+        imu_node,
         peripheral_node,
     ]
     
