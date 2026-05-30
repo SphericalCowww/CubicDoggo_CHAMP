@@ -75,7 +75,7 @@ Run the robot first:
     cd CubicDoggo
     colcon build
     source install/setup.bash
-    ros2 launch my_robot_bringup my_robot.with_lifecycle.launch.py
+    ros2 launch my_robot_bringup cubic_doggo.with_lifecycle.launch.py
 
 ### Reading out variables from ROS
 
