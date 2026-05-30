@@ -91,11 +91,16 @@ To track the values (remember to connect the RaspPi to a monitor):
     # on another terminal for plotjuggler
     sudo apt install ros-jazzy-plotjuggler-ros
     ros2 run plotjuggler plotjuggler
-    # start => locate the following
-    ## /imu/euler
-    ## /joint_states
-    # OK
-    # on the left panel, expand /imu and /joint_states and drag the variable to the center for live plotting
+    # load CubicDoggo/monitor_plot.xml 
+    # or starting over again:
+    ## start => locate the following
+    ### /imu/data
+    ### /imu/euler
+    ### /joint_states
+    ## OK
+    ## on the left panel, expand /imu and /joint_states and drag the variable to the center for live plotting
+
+<img src="https://github.com/SphericalCowww/CubicDoggo_06R/blob/main/fig_plotJuggler.png" width="600">
 
 ## References:
 - ROS1 Packages for CHAMP Quadruped Controller (<a href="https://github.com/chvmp/champ">GitHub</a>) => node based IMU control with classical walk gait
